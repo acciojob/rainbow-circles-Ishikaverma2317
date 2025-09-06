@@ -1,1 +1,64 @@
-/*  your css code here. If applicable */
+/* Center the drawing area (optional for preview) */
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+/* Base circle styles */
+#outer, #middle, #inner {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+/* 1) Red: 300x300 */
+#outer {
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+}
+
+/* 2) Orange: 250x250 */
+#middle {
+  width: 250px;
+  height: 250px;
+  background: #ffa500;
+}
+
+/* 3) Yellow: 200x200 */
+#inner {
+  width: 200px;
+  height: 200px;
+  background: #ffff00;
+  position: relative;
+}
+
+/* 4) Green: 150x150 */
+#inner::before,
+#inner::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* 4) Green ring */
+#inner::before {
+  width: 150px;
+  height: 150px;
+  background: #008000;
+}
+
+/* 5) Blue (100x100) + 6) Purple center (50x50) using a radial-gradient */
+#inner::after {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle,
+    #800080 0 25px,   /* Purple center: radius 25px => 50px diameter */
+    #0000ff 25px 50px /* Blue ring: out to radius 50px => 100px diameter */
+  );
+}
