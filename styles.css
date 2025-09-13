@@ -7,43 +7,50 @@ body {
   position: relative;
 }
 
-.circle {
-  position: absolute;
-  border-radius: 50%;
-}
-
 #outer {
   width: 300px;
   height: 300px;
+  border-radius: 50%;
   background: #ff0000; /* Red */
+  position: absolute;
 }
 
 #middle {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
   background: #ffa500; /* Orange */
+  position: absolute;
 }
 
 #inner {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
   background: #ffff00; /* Yellow */
+  position: absolute;
 }
 
 #inner-green {
   width: 150px;
   height: 150px;
+  border-radius: 50%;
   background: #008000; /* Green */
+  position: absolute;
 }
 
 #inner-blue {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
   background: #0000ff; /* Blue */
+  position: absolute;
 }
 
 #inner-purple {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   background: #800080; /* Purple */
+  position: absolute;
 }
