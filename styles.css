@@ -1,40 +1,42 @@
+/* Page ko center karne ke liye */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  background: #f0f0f0; /* halka background */
 }
 
-/* OUTER circle */
-#outer {
+/* Outer Circle */
+.outer {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #ff0000;   /* red */
-  border: 25px solid #ffa500; /* orange */
+  background: red;
+  border: 25px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* MIDDLE circle */
-#middle {
+/* Middle Circle */
+.middle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #008000;   /* green */
-  border: 25px solid #ffff00; /* yellow */
+  background: green;
+  border: 25px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* INNER circle */
-#inner {
+/* Inner Circle */
+.inner {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #800080;   /* violet */
-  border: 25px solid #0000ff; /* blue */
+  background: purple;
+  border: 25px solid blue;
 }
